@@ -21,10 +21,12 @@ def peak_fitting(data,prominence,xdata = None ,peak_type='gaussian',
     '''
     import numpy as np
     from scipy.signal import find_peaks
-    if xdata == None:
+    if xdata is None:
         xdata = np.arange(len(data))
+    # print(len(data))
     peaks,info = find_peaks(data,prominence=prominence,**peakfinding_params)
     # print(peaks)
+    # print(info)
     peak_number = len(peaks)
     corrected_left_bases = []
     corrected_right_bases = []
@@ -81,4 +83,3 @@ def peak_fitting(data,prominence,xdata = None ,peak_type='gaussian',
             fitresult.plot_fit(ax=ax,datafmt = '-')
         return fitresult,ax
     return fitresult
-    
