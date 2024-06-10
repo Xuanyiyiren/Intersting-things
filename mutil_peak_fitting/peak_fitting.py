@@ -15,7 +15,7 @@ def peak_fitting(data,prominence,xdata = None ,peak_type='gaussian',
 
     return:
         if plotting == True:
-            return the lmfit.model.ModelResult object, the result of the fitting
+            return a tuple, lmfit.model.ModelResult object, the result of the fitting and the number of peaks
         else:
             return a tuple, the lmfit.model.ModelResult object and ax.
     '''
@@ -74,12 +74,12 @@ def peak_fitting(data,prominence,xdata = None ,peak_type='gaussian',
             params[f'V{i}_gamma'].set(value = 0.7,vary=True,min = 0)
 
     fitresult = total_model.fit(data,params,x=xdata)
-
     if plotting:
         print(f'{peak_number} peaks found.')
         if ax == None:
             ax = fitresult.plot_fit(datafmt = '-')
         else:
             fitresult.plot_fit(ax=ax,datafmt = '-')
-        return fitresult,ax
-    return fitresult
+        return fitresult,peak_number,ax
+    else:
+        return fitresult,peak_number
