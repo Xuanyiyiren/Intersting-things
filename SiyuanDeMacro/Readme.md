@@ -19,13 +19,13 @@ A Python script to replace macros in text files based on definitions provided in
 Run the script by providing a macro file and one or more source files:
 
 ```bash
-python replace_macros.py <macro_file> <source_file1> <source_file2> ...
+python UnMacro.py <macro_file> <source_file1> <source_file2> ...
 ```
 
 For example:
 
 ```bash
-python replace_macros.py macros.json file1.md file2.md
+python UnMacro.py macros.json file1.md file2.md
 ```
 
 ### Default Behavior
@@ -36,7 +36,7 @@ If no arguments are provided, the script will:
 2. Process all `.md` files in the current directory.
 
 ```bash
-python replace_macros.py
+python UnMacro.py
 ```
 
 ### Output
@@ -56,7 +56,7 @@ The macro file should be in JSON format, with each macro and its replacement def
 }
 ```
 
-This is orignate from [Siyuan](https://b3log.org/siyuan/)'s KaTeX macro.
+This originates from [SiYuan](https://b3log.org/siyuan/)'s KaTeX macro.
 
 ## Contribute
 
