@@ -1,0 +1,8 @@
+{
+    "\\bsy": "\\boldsymbol",
+    "\\i": "{\\rm i}",
+    "\\e": "{\\rm e}",
+    "\\ring": "\\overset{\\circ}",
+    "\\Tr": "^{\\intercal}",
+    "\\dif": "{\\rm d}"
+}
