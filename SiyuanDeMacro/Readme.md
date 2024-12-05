@@ -1,6 +1,3 @@
-以下是一个适用于您的仓库的 `README.md` 文件示例：
-
-~~~markdown
 # Macro Replacer
 
 A Python script to replace macros in text files based on definitions provided in a JSON file. This tool is especially useful for automating text processing in markdown or other text-based formats.
@@ -32,7 +29,7 @@ Run the script by providing a macro file and one or more source files:
 
 ```bash
 python replace_macros.py <macro_file> <source_file1> <source_file2> ...
-~~~
+```
 
 For example:
 
