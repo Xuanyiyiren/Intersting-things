@@ -12,15 +12,6 @@ A Python script to replace macros in text files based on definitions provided in
 
 - Python 3.6 or later
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/macro-replacer.git
-    cd macro-replacer
-    ```
-2. Ensure Python is installed and available in your environment.
-
 ## Usage
 
 ### Command Line Arguments
